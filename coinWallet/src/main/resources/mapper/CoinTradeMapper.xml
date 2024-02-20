@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mytest.coinTrade.mapper.CoinTradeMapper">
+
+	<resultMap type="CoinTradeDto" id="getCoinTradeResultMap">
+		<result column="RowId" property="rowId"/>
+		<result column="Market" property="market"/>
+		<result column="BuyCnt" property="buyCnt"/>
+		<result column="SellCnt" property="sellCnt"/>
+		<result column="UseYn" property="useYn"/>
+		<result column="PriceWon" property="priceWon"/>
+		<result column="LastBuyPrice" property="lastBuyPrice"/>
+		<result column="LastSellPrice" property="lastSellPrice"/>
+		<result column="FixPrice" property="fixPrice"/>
+		<result column="FixUpPrice" property="fixUpPrice"/>
+		<result column="LockTop" property="lockTop"/>
+		<result column="LockBottom" property="lockBottom"/>
+		<result column="UseKrw" property="useKrw"/>
+		<result column="BackKrw" property="backKrw"/>
+		<result column="ReGet" property="reGet"/>
+		<result column="CreateDt" property="createDt"/>
+		<result column="UpdateDt" property="updateDt"/>
+	</resultMap>
+	
+	<select id="getCoinTrade" parameterType="Map" resultMap="getCoinTradeResultMap">
+		SELECT
+			RowId
+			,Market
+			,BuyCnt
+			,SellCnt
+			,IF(UseYn , true, false) as UseYn
+			,PriceWon
+			,LastBuyPrice
+			,LastSellPrice
+			,FixPrice
+			,FixUpPrice
+			,LockTop
+			,LockBottom
+			,UseKrw
+			,BackKrw
+			,ReGet
+			,CreateDt
+			,UpdateDt
+		FROM
+			CoinTrade
+	</select>
+	
+</mapper>

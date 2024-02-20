@@ -1,0 +1,18 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: apigateway-service
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: coinInfo
+            uri: http://localhost:8080/
+            predicates:
+              - Path=/coinInfo/**
+          - id: coinTrade
+            uri: http://localhost:8081/
+            predicates:
+              - Path=/coinTrade/**
