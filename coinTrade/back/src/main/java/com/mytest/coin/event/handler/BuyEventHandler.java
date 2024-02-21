@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 import com.mytest.coin.entity.BuyEntity;
 import com.mytest.coin.event.BuyCreatedEvent;
 import com.mytest.coin.mapper.BuyMapper;
-import com.mytest.coin.repository.BuyRepositoey;
+import com.mytest.coin.repository.BuyRepository;
 
 @Component
 @AllArgsConstructor
 public class BuyEventHandler {
 	
-	private final BuyRepositoey buyRepository;
+	private final BuyRepository buyRepository;
 	
 	@EventHandler
 	protected void on(BuyCreatedEvent buyCreatedEvent) {

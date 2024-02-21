@@ -7,8 +7,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class AddBalanceCommand {
-	
+public class MinusBalanceCommand {
 	@TargetAggregateIdentifier
 	private String tradeId;
     private String name;

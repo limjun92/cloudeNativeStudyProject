@@ -8,11 +8,12 @@ spring:
     gateway:
       mvc:
         routes:
-          - id: coinInfo
-            uri: http://localhost:8080/
-            predicates:
-              - Path=/coinInfo/**
           - id: coinTrade
             uri: http://localhost:8081/
             predicates:
               - Path=/coinTrade/**
+          - id: coinWallet
+            uri: http://localhost:8082/
+            predicates:
+              - Path=/coinWallet/**
+          

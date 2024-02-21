@@ -11,6 +11,7 @@ import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.stereotype.Service;
 
 import com.mytest.coin.command.CreateBuyCommand;
+import com.mytest.coin.command.CreateSellCommand;
 import com.mytest.coin.dto.Request;
 import com.mytest.coin.entity.BuyEntity;
 import com.mytest.coin.query.GetBuyQuery;
@@ -26,16 +27,16 @@ public class TradeService {
         this.queryGateway = queryGateway;
     }
 
-    public String buy(Request upsertParam) {
+    public String buy(Request upsertParams) {
         // command생성
     	
-    	Map<String, String> params = upsertParam.getUpsertParams();
+    	Map<String, String> params = upsertParams.getUpsertParams();
     	    	
         CreateBuyCommand createBuyCommand = new CreateBuyCommand(UUID.randomUUID().toString(), params.get("name"), Integer.parseInt(params.get("paid")));
 
         // 생성한 command전송(비동기)
         String returnValue = commandGateway.sendAndWait(createBuyCommand);
-        System.out.printf("returnValue: %s \n", returnValue);
+        System.out.printf("createBuyCommand: %s \n", returnValue);
         
         return returnValue;
     }
@@ -43,5 +44,17 @@ public class TradeService {
 	public List<BuyEntity> getBuy(Request searchParams) throws InterruptedException, ExecutionException {
 		// TODO Auto-generated method stub
 		return queryGateway.query(new GetBuyQuery(), ResponseTypes.multipleInstancesOf(BuyEntity.class)).get();
+	}
+
+	public String sell(Request upsertParams) {
+		// TODO Auto-generated method stub
+		Map<String, String> params = upsertParams.getUpsertParams();
+		
+		CreateSellCommand createSellCommand = new CreateSellCommand(UUID.randomUUID().toString(), params.get("name"), Double.parseDouble(params.get("volume")));
+		
+		String returnValue = commandGateway.sendAndWait(createSellCommand);
+        System.out.printf("createSellCommand: %s \n", returnValue);
+		
+        return returnValue;
 	}
 }

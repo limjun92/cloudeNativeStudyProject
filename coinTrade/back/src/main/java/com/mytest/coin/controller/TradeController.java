@@ -33,4 +33,10 @@ public class TradeController {
     	System.out.println("Controller");
     	return tradeService.getBuy(searchParams);
     }
+    
+    @PostMapping("/sell")
+    public String sell(@RequestBody Request upsertParams) throws IOException {
+    	System.out.println("Controller");
+    	return tradeService.sell(upsertParams);
+    }
 }

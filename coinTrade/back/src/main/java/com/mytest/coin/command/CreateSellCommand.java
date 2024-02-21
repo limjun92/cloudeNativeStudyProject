@@ -7,10 +7,10 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class AddBalanceCommand {
+public class CreateSellCommand {
 	
 	@TargetAggregateIdentifier
-	private String tradeId;
+    private String tradeid;
     private String name;
-    private double balance;
+    private Double volume;
 }
