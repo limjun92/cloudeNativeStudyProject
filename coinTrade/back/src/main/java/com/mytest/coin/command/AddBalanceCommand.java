@@ -10,7 +10,7 @@ import lombok.Getter;
 public class AddBalanceCommand {
 	
 	@TargetAggregateIdentifier
-	private String tradeId;
+	private String walletId;
     private String name;
     private double balance;
 }

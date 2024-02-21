@@ -7,10 +7,8 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class MyPageAddBalanceCommand {
+public class CancelSellCommand {
 	
 	@TargetAggregateIdentifier
-    private String tradeid;
-    private String name;
-    private double balance;
+	private String tradeId;
 }

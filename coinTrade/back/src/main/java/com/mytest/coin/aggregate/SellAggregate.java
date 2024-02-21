@@ -7,9 +7,7 @@ import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.spring.stereotype.Aggregate;
 
-import com.mytest.coin.command.CreateBuyCommand;
 import com.mytest.coin.command.CreateSellCommand;
-import com.mytest.coin.event.BuyCreatedEvent;
 import com.mytest.coin.event.SellCreatedEvent;
 
 import lombok.NoArgsConstructor;

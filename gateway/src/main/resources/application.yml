@@ -16,4 +16,12 @@ spring:
             uri: http://localhost:8082/
             predicates:
               - Path=/coinWallet/**
+          - id: coinHist
+            uri: http://localhost:8083/
+            predicates:
+              - Path=/coinHist/**
+          - id: coinMyPage
+            uri: http://localhost:8084/
+            predicates:
+              - Path=/coinMyPage/**
           

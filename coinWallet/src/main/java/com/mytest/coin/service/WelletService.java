@@ -21,8 +21,8 @@ public class WelletService {
 		this.queryGateway = queryGateway;
 	}
 
-	public List<WalletEntity> getBalance(Request upsertParams) throws InterruptedException, ExecutionException {
-		// TODO Auto-generated method stub
-		return queryGateway.query(new GetWalletQuery(), ResponseTypes.multipleInstancesOf(WalletEntity.class)).get();
-	}
+//	public List<WalletEntity> getBalance(Request upsertParams) throws InterruptedException, ExecutionException {
+//		// TODO Auto-generated method stub
+////		return queryGateway.query(new GetWalletQuery(), ResponseTypes.multipleInstancesOf(WalletEntity.class)).get();
+//	}
 }

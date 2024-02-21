@@ -6,7 +6,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class BalanceMinusEvent {
-    private String walletId;
-    private String name;
-    private double balance;
+    private final String walletId;
+    private final String name;
+    private final double balance;
 }
