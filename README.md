@@ -2,7 +2,7 @@
 ## 클라우드 아키텍처 설계
 ### 클라우드 아키텍처 구성, MSA 아키텍처 구성도
 
-<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.png" width="700">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.png" width="500">
 
 # 클라우드 네이비트 모델링(Biz.)
 ## Data Modeling/서비스 분리/설계 역량
@@ -13,6 +13,22 @@
 # 클라우드 네이티브 개발 MSA(Dev.)
 ## MSA 개발 또는 개발관리 역량
 ### 분산 트랜잭션 - Saga
+
+* 흐름
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EC%82%AC%EA%B0%80%EB%8F%99%EC%9E%912.png" width="600">
+
+* Trade service
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/buyService.png" width="700">
+
+* Trade aggregate
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/buyAggregate.png" width="450">
+
+* Trade saga
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-02-22%20212142.png" width="800">
+
+* Wallet aggregate
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/walletAggregate.png" width="500">
+
 ### 보상 처리 - Compensation
 ### 단일 진입점 - Gateway
 ### 분산 데이터 프로젝션 - CQRS
