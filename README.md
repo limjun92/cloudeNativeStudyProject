@@ -1,4 +1,4 @@
-# 클라우드 네이티브 아키텍처(IaaS)
+ # 클라우드 네이티브 아키텍처(IaaS)
 ## 클라우드 아키텍처 설계
 ### 클라우드 아키텍처 구성, MSA 아키텍처 구성도
 
@@ -46,8 +46,15 @@
 # 클라우드 네이티브 운영(PaaS)
 ## 클라우드 배포 역량
 ### 클라우드 배포 -Container 운영
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/2.png" width="400">
+
 ## 컨테이너 인프라 설계 및 구성 역량
 ### 컨테이너 자동확정 - HPA
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/3.png" width="400">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/1.png" width="400">
+
 ### 컨테이너로부터 환경분리 - CofigMap/Secret
 ### 클라우드스토리지 활용 - PVC
 ### 셀프 힐링/무정지배포 - Liveness/Rediness Probe
