@@ -50,6 +50,7 @@
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/2.png" width="400">
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/5.png" width="400">
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/4.png" width="400">
+
 ## 컨테이너 인프라 설계 및 구성 역량
 ### 컨테이너 자동확정 - HPA
 
@@ -59,5 +60,9 @@
 ### 컨테이너로부터 환경분리 - CofigMap/Secret
 ### 클라우드스토리지 활용 - PVC
 ### 셀프 힐링/무정지배포 - Liveness/Rediness Probe
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/12.png" width="700">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/11.png" width="700">
+
 ### 서비스 메쉬 응용 - Mesh
 ### 통합 모니터링 - Loggregation/Monitoring
