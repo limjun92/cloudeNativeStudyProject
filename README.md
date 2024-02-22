@@ -2,9 +2,13 @@
 ## 클라우드 아키텍처 설계
 ### 클라우드 아키텍처 구성, MSA 아키텍처 구성도
 
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8.png" width="700">
+
 # 클라우드 네이비트 모델링(Biz.)
 ## Data Modeling/서비스 분리/설계 역량
 ### 도메일분석 - 이벤트 스토밍
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%8A%A4%ED%86%A0%EB%B0%8D%202024-02-22%20203416.png" width="700">
 
 # 클라우드 네이티브 개발 MSA(Dev.)
 ## MSA 개발 또는 개발관리 역량
