@@ -24,7 +24,7 @@ public class WalletController {
     @PostMapping("/getBalance")
     public List<WalletEntity> getBalance(@RequestBody Request upsertParams) throws IOException, InterruptedException, ExecutionException {
     	System.out.println("Controller");
-//    	return welletService.getBalance(upsertParams);
-    	return null;
+    	return welletService.getBalance(upsertParams);
+    	//return null;
     }
 }

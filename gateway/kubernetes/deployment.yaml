@@ -1,36 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wallet
+  name: gateway
   labels:
-    app: wallet
+    app: gateway
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wallet
+      app: gateway
   template:
     metadata:
       labels:
-        app: wallet
+        app: gateway
     spec:
       containers:
-        - name: wallet
-          image: limjun9205/wallet:2024022207
+        - name: gateway
+          image: limjun9205/gateway:2024022203
           ports:
-            - containerPort: 8082
+            - containerPort: 8088
           readinessProbe:
             httpGet:
-              path: '/coinWallet/actuator/health'
-              port: 8082
+              path: '/actuator/health'
+              port: 8088
             initialDelaySeconds: 10
             timeoutSeconds: 2
             periodSeconds: 5
             failureThreshold: 10
           livenessProbe:
             httpGet:
-              path: '/coinWallet/actuator/health'
-              port: 8082
+              path: '/actuator/health'
+              port: 8088
             initialDelaySeconds: 120
             timeoutSeconds: 2
             periodSeconds: 5

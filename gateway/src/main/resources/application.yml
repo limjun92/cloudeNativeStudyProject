@@ -9,11 +9,11 @@ spring:
       mvc:
         routes:
           - id: coinTrade
-            uri: http://localhost:8081/
+            uri: http://192.168.87.87:8081/
             predicates:
               - Path=/coinTrade/**
           - id: coinWallet
-            uri: http://localhost:8082/
+            uri: http://192.168.95.246:8082/
             predicates:
               - Path=/coinWallet/**
           - id: coinHist
@@ -21,7 +21,6 @@ spring:
             predicates:
               - Path=/coinHist/**
           - id: coinMyPage
-            uri: http://localhost:8084/
+            uri: http://192.168.47.215:8084/
             predicates:
               - Path=/coinMyPage/**
-          

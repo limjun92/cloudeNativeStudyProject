@@ -33,59 +33,59 @@ public class KafkaConsumer {
 		coinApi = new CoinAPI();
 	}
 
-	@KafkaListener(topics = "coinInfo", groupId = "myGroup")
-	public void listen(String message) {
-		System.out.println("??");
-		try {
-			ObjectMapper mapper = new ObjectMapper();
-			List<CoinDto> coins = mapper.readValue(message, new TypeReference<List<CoinDto>>() {});
-			System.out.println("Received" + coins.toString());
-
-			String coinsNm = coins.get(0).getMarket();
-			for (int i = 1; i < coins.size(); i++) {
-				coinsNm += ", " + coins.get(i).getMarket();
-			}
-
-			JSONArray CurrentPrice = coinApi.CurrentCoinPrice(coinsNm);
-
-//          System.out.println(CurrentPrice);
-			List<CoinTradeDto> coinTrade = coinTradeMapper.getCoinTrade();
-
-			for (int i = 0; i < coinTrade.size(); i++) {
-				JSONObject jsonObj = (JSONObject) CurrentPrice.get(i);
-
-				String jsonMarket = jsonObj.getString("market");
-
-				Double currentPrice = Double.parseDouble((String.valueOf(jsonObj.get("trade_price"))));
-
-				System.out.println(jsonMarket);
-				System.out.println("?? " + coinTrade.get(i).getMarket());
-				System.out.println();
-
-				Double fixPrie = coinTrade.get(i).getFixPrice();
-
-				if (currentPrice < fixPrie) {
-					
-					CoinHist coinHist = new CoinHist();
-					
-					coinHist.setBuyPrice(10000);
-					coinHist.setBuyWonPay(5000);
-					coinHist.setMarket("KRW-BTC");
-					
-					System.out.println("/////123123");
-					try {
-						ObjectMapper producerMapper = new ObjectMapper();
-						String msg = producerMapper.writeValueAsString(coinHist);
-						kafkaProducer.sendMessage(msg);
-					} catch (JsonProcessingException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+//	@KafkaListener(topics = "coinInfo", groupId = "myGroup")
+//	public void listen(String message) {
+//		System.out.println("??");
+//		try {
+//			ObjectMapper mapper = new ObjectMapper();
+//			List<CoinDto> coins = mapper.readValue(message, new TypeReference<List<CoinDto>>() {});
+//			System.out.println("Received" + coins.toString());
+//
+//			String coinsNm = coins.get(0).getMarket();
+//			for (int i = 1; i < coins.size(); i++) {
+//				coinsNm += ", " + coins.get(i).getMarket();
+//			}
+//
+//			JSONArray CurrentPrice = coinApi.CurrentCoinPrice(coinsNm);
+//
+////          System.out.println(CurrentPrice);
+//			List<CoinTradeDto> coinTrade = coinTradeMapper.getCoinTrade();
+//
+//			for (int i = 0; i < coinTrade.size(); i++) {
+//				JSONObject jsonObj = (JSONObject) CurrentPrice.get(i);
+//
+//				String jsonMarket = jsonObj.getString("market");
+//
+//				Double currentPrice = Double.parseDouble((String.valueOf(jsonObj.get("trade_price"))));
+//
+//				System.out.println(jsonMarket);
+//				System.out.println("?? " + coinTrade.get(i).getMarket());
+//				System.out.println();
+//
+//				Double fixPrie = coinTrade.get(i).getFixPrice();
+//
+//				if (currentPrice < fixPrie) {
+//					
+//					CoinHist coinHist = new CoinHist();
+//					
+//					coinHist.setBuyPrice(10000);
+//					coinHist.setBuyWonPay(5000);
+//					coinHist.setMarket("KRW-BTC");
+//					
+//					System.out.println("/////123123");
+//					try {
+//						ObjectMapper producerMapper = new ObjectMapper();
+//						String msg = producerMapper.writeValueAsString(coinHist);
+//						kafkaProducer.sendMessage(msg);
+//					} catch (JsonProcessingException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					}
+//				}
+//			}
+//
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
 }

@@ -9,6 +9,10 @@ axon:
     general: xstream
   axonserver:
     servers: localhost:8124
+  eventhandling:
+    processors:
+      name:
+        mode: tracking
 
 spring:
   h2:
