@@ -49,7 +49,7 @@
 
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/2.png" width="400">
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/5.png" width="400">
-<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/4.png" width="400">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/14.png" width="700">
 
 ## 컨테이너 인프라 설계 및 구성 역량
 ### 컨테이너 자동확정 - HPA
