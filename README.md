@@ -64,7 +64,7 @@
 ### 클라우드스토리지 활용 - PVC
 ### 셀프 힐링/무정지배포 - Liveness/Rediness Probe
 
-<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/12.png" width="700">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/12.png" width="400">
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/11.png" width="700">
 
 ### 서비스 메쉬 응용 - Mesh
