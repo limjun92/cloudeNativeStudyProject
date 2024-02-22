@@ -30,8 +30,18 @@
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/walletAggregate.png" width="500">
 
 ### 보상 처리 - Compensation
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EB%B3%B4%EC%83%81%EA%B4%80%EB%A0%A8.png" width="700">
+
 ### 단일 진입점 - Gateway
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4%202024-02-22%20221104.png" width="700">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/8080.png" width="400">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/8084.png" width="400">
+
 ### 분산 데이터 프로젝션 - CQRS
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/CQRS.png" width="400">
 
 # 클라우드 네이티브 운영(PaaS)
 ## 클라우드 배포 역량
