@@ -16,6 +16,11 @@
 ## MSA 개발 또는 개발관리 역량
 ### 분산 트랜잭션 - Saga
 
+* Eventual Transaction
+* Compensation transaction
+
+* AxonServer EventStore와 Event Borker의 두 역할 수행
+
 * 흐름
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EC%82%AC%EA%B0%80%EB%8F%99%EC%9E%912.png" width="600">
 
