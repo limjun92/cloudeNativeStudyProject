@@ -70,6 +70,8 @@
 
 ### 서비스 메쉬 응용 - Mesh
 
+* 트래픽 통제
+
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/19.png" width="700">
 
 ### 통합 모니터링 - Loggregation/Monitoring
