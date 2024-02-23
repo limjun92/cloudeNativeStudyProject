@@ -33,6 +33,8 @@
 
 ### 보상 처리 - Compensation
 
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-02-22%20212142.png" width="800">
+
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/22.png" width="700">
 
 ### 단일 진입점 - Gateway
