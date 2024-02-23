@@ -62,6 +62,8 @@
 ## 컨테이너 인프라 설계 및 구성 역량
 ### 컨테이너 자동확장 - HPA
 
+* kubectl autoscale deployment gateway --cpu-percent=50 --min=1 --max=3
+
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/3.png" width="300">
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/1.png" width="400">
 
