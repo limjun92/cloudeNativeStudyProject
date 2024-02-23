@@ -44,7 +44,7 @@
 
 ### 분산 데이터 프로젝션 - CQRS
 
-<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/CQRS.png" width="400">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/CQRS.png" width="700">
 
 # 클라우드 네이티브 운영(PaaS)
 ## 클라우드 배포 역량
