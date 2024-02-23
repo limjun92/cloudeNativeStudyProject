@@ -63,6 +63,9 @@
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/16.png" width="200">
 
 ### 클라우드스토리지 활용 - PVC
+
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/21.png" width="200">
+
 ### 셀프 힐링/무정지배포 - Liveness/Rediness Probe
 
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/12.png" width="400">
