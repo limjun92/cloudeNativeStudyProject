@@ -59,7 +59,8 @@
 
 ### 컨테이너로부터 환경분리 - CofigMap/Secret
 
-<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/13.png" width="300">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/15.png" width="700">
+<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/16.png" width="200">
 
 ### 클라우드스토리지 활용 - PVC
 ### 셀프 힐링/무정지배포 - Liveness/Rediness Probe
