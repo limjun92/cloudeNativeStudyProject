@@ -41,7 +41,6 @@
 
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4%202024-02-22%20221104.png" width="700">
 <img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/8080.png" width="400">
-<img src="https://github.com/limjun92/cloudeNativeStudyProject/blob/master/image/8084.png" width="400">
 
 ### 분산 데이터 프로젝션 - CQRS
 
